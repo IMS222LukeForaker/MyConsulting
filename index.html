@@ -1,0 +1,332 @@
+<! -- It is after downloading a template from materializecss site and customizing it -->
+<!-- to darken the image pinetools.com/darken-image-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Tech Consulting</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.slider').slider();
+            //$('.slider').slider({fullWidth: true, indicators: false, height: 500, interval: 6000});
+            $('.scrollspy').scrollSpy()
+            $('.datepicker').datepicker();
+        });
+    </script>
+
+    <style>
+        .material-icons {
+            display: inline-flex;
+            vertical-align: text-bottom;
+        }
+    </style>
+
+</head>
+
+<body id="home">
+    <!-- navigation bar -->
+    <nav class="" role="navigation">
+        <div class="nav-wrapper black lighten-1"><a id="logo-container" href="#" class="brand-logo"><i class="large material-icons">code</i>Luke Consulting</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons menu">menu</i></a>
+        </div>
+    </nav>
+    <!-- Slider -->
+    <section class="slider">
+        <ul class="slides">
+            <li>
+                <img src="mid-century_modernism1.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h1>Luke Consulting!</h1>
+                    <h5 class="light grey-text text-lighten-3">World Class Experts!</h5>
+                    <a class="waves-effect waves-light btn btn-large white black-text">Learn More</a>
+                </div>
+            </li>
+            <li>
+                <img src="hacking_image.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                    <h1>Left Aligned Caption</h1>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    <a class="waves-effect waves-light btn btn-large white black-text">Learn More</a>
+
+                </div>
+            </li>
+            <li>
+                <img src="mumb_shape.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                    <h1>Right Aligned Caption</h1>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    <a class="waves-effect waves-light btn btn-large white black-text">Learn More</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Services -->
+    <div id="service" class="container scrollspy">
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-black-text"><i class="material-icons">flash_on</i></h2>
+                        <h5 class="center">Speeds up development</h5>
+
+                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-black-text"><i class="material-icons">group</i></h2>
+                        <h5 class="center">User Experience Focused</h5>
+
+                        <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-black-text"><i class="material-icons">settings</i></h2>
+                        <h5 class="center">Easy to work with</h5>
+
+                        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info -->
+    <section id="info" class="section section-info scrollspy">
+        <h4 class="center">Newest Tech Info</h4>
+        <h6 class="center">Updated: Oct 3, 2023</h6>
+        <!-- first card -->
+        <div class="row">
+            <div class="col l3 m6 s12">
+                <div class="card small">
+                    <div class="card-image">
+                        <img src="tech_consulting1.jpg">
+                        <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- second card -->
+            <div class="col l3 m6 s12">
+                <div class="card small">
+                    <div class="card-image">
+                        <img src="tech_consulting2.jpg">
+                        <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- third card -->
+            <div class="col l3 m6 s12">
+                <div class="card small">
+                    <div class="card-image">
+                        <img src="tech_consulting3.jpg">
+                        <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- fourth card -->
+            <div class="col l3 m6 s12">
+                <div class="card small">
+                    <div class="card-image">
+                        <img src="tech_consulting4.jpg">
+                        <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+
+    <section id="about" class="section scrollspy">
+        <h4 class="center">About Me</h4>
+        <div class="container">
+            <div class="row">
+                <p><img id="image" src="Luke_Foraker.jpg" alt="Luke Foraker" width=20% style="float: left"> Luke Foraker graduated from Franklin Community High School as one of the top twenty students in his class and is currently undergoing secondary study at Miami University- specifically in Emerging Technology in Business and Design. His current focus within the field is still unknown, but he hopes to one day incorporate his love for the arts and sciences to study a design career once he finishes his studies. On top of his career focus, Luke also has ties to music and his naturally tuned ear. He is a veteran member of the Franklin Community Blue Regiment Marching Band, serving as a member of the Front Ensemble for six consecutive years, and is now applying his skills to the Miami University Marching Band. Although his love for music may not translate directly to his professional focus, being in music has taught him skills such as quicker reading and comprehension, hand-eye coordination, physical acitivity, spatial awareness, priority management, personal handywork skills, team leadership, stress management, communication, inter-departmental coordination, and in-depth listening skills. This love for music stems beyond the marching arts; Luke has been involved in playing music since the young age of six and has taken positions, roles, and auditions with some of the most prestigious groups in his area. Highlights include auditioning for Phantom Regiment (2021), and recieving a callback invite from the mighty Cavaliers (2023); positions include Percussion First Chair with the Indiana All-State Honor Band for three consecutive years, and first chair in the Franklin Community High School assorted Beginner Band, Symphonic Band, Wind Ensemble, and Percussion Ensemble throughout his four years in high school. His job experience includes a position as a camp counselor at the Young Men's Christian Association's own Camp Tecumseh located in Brookston, Indiana. Here, he exercised skills in team building, leadership, communication, stress management, and event planning in order to create memorable experiences that are fundamental to the camp. He may return to this camp this coming summer to enrich his experience with leadership and connection to his community.</p>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <i class="material-icons inline-icon prefix">hot_tub</i> 31 N Fisher Dr. Oxford, OH 45056
+
+                </div>
+                <div class="col s6">
+                    <i class="material-icons inline-icon prefix">phone</i>
+                    Phone: +1 (812) 857-6078
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <i class="material-icons inline-icon prefix">work</i> Work: Miami University, Student, B.A. (tenative) Emerging Technology in Business and Design
+
+                </div>
+                <div class="col s6">
+                    <i class="material-icons inline-icon prefix">mail</i>
+                    Forakeld@miamioh.edu
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="section section-follow black darken-2 white-text center">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h4>Follow Our Site</h4>
+                    <p>Follow Our Social Media for Special Events and Deals</p>
+                    <!-- we used fontawesome for social media icons. see the link of fontawesome in line 14. you can also check https://fontawesome.com/icons -->
+                    <a href="#" class="white-text">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-google-plus fa-2x"></i>
+                    </a>
+                    <a href="#" class="white-text"> <i class="fab fa-pinterest fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="section section-contact scrollspy">
+        <div class="container">
+            <div class="row">
+                <form action="https://formsubmit.co/forakeld@miamioh.edu" method="POST" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" name="name" class="validate">
+                            <label for="icon_prefix">Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">email</i>
+                            <input id="icon_prefix" type="text" name="email" class="validate">
+                            <label for="icon_prefix">Email</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="icon_telephone" type="tel" class="validate" name="phone">
+                            <label for="icon_telephone">Telephone</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">date_range</i>
+                            <input type="text" class="datepicker">
+                            <label for="datepicker">Best Date to Contact</label>
+                            <!-- I find it incredibly annoying that you have to click on the line in order for the popup to work. I went back and forth for a solid 10 minutes before I realized that I was clicking the text and not the line -->
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">message</i>
+                            <textarea id="textarea1" class="materialize-textarea" name="comment"></textarea>
+                            <label for="textarea1">Textarea</label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="black btn-large">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Company Bio</h5>
+                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+                </div>
+                <div class="col l3 m6 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 m6 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+    </footer>
+</body></html>
